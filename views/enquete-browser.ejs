@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./javascript/browsertechnologies.js" defer></script>
+    <title>Enquete Minor Webdesign and Development</title>
+</head>
+<main>
+    <section id="centreren">
+<form id="browserT" method="post" enctype="application/x-www-form-urlencoded" action="/resultaten">
+    <fieldset>
+        <!-- Web app from scratch -->
+        <h2>4. Browser Technologies</h2>
+        <h3>Vul hier jouw naam in</h3>
+        <input id="bt-naam" type="text" placeholder="Vul hier jouw naam in..." name="naam" required>
+        <h3>Docenten van Browser Technologies</h3>
+        <input id="bt-docenten" type="text" placeholder="Vul hier de naam(en) van jouw docenten in" name="docenten" required>
+        <h3>Tijd waarin je dit vak hebt gehad</h3>
+        <section class="weekData">
+            <section>
+                <h4>Vul hier de start datum in</h4>
+            <input id="bt-begindatum" type="date" value="start-date" name="start-datum" required>
+        </section>
+            <section>
+            <h4>Vul hier de eind datum in</h4>
+                <input id="bt-einddatum" type="date" value="ending-date" name="eind-datum" required>
+        </section>
+    </section>
+        <h3>Geef het vak Browser Technologies een cijfer</h3>
+            <select id="bt-cijfer" name="cijfer" required>
+                <option name="cijfer" value="">Cijfer kiezen</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        <h3>Hoe moeilijk vond je het vak Browser Technologies?</h3>
+            <select id="bt-moeilijkheidsgraad" name="moeilijkheidsgraad" required>
+                <option name="moeilijkheidsgraad" value="">Keuze maken</option>
+                <option value="zeer gemakkelijk">Zeer gemakkelijk</option>
+                <option value="gemakkelijk">Gemakkelijk</option>
+                <option value="neutraal">Neutraal</option>
+                <option value="moeilijk">Moeilijk</option>
+                <option value="zeer moeilijk">Zeer moeilijk</option>
+        </select>
+        <h3>Hoe vond je de uitleg van bij Browser Technologies?</h3>
+        <select id="bt-uitleg" name="uitleg" required>
+            <option name="uitleg" value="">Keuze maken</option>
+            <option value="zeer slecht">Zeer slecht</option>
+            <option value="slecht">Slecht</option>
+            <option value="neutraal">Neutraal</option>
+            <option value="goed">Goed</option>
+            <option value="zeer goed">Zeer goed</option>
+    </select>
+    <h3>Geef jouw mening over Browser Technologies</h3>
+    <textarea id="bt-reactie" name="reactie" rows="4" cols="50" required placeholder="Schrijf hier wat jij want het vak vond of bijvoorbeeld een leuke toevoeging">
+    </textarea>
+    </fieldset>
+    <section id="submit">
+    <a id="submit" href="/resultaten">
+        <input id="submitBtn" type="submit" value="Enquete inleveren">
+    </a>
+    </section>
+</form>
+</section>
+</main>
+
+<%- include('./partials/foot') %>
