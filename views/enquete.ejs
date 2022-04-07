@@ -4,17 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleEnquete.css" />
     <script src="./javascript/wafs.js" defer></script>
     <title>Enquete Minor Webdesign and Development</title>
 </head>
 <body>
+    <header>
+        <h1>Web App from Scratch</h1>
+    </header>
 <main>
-    <section id="centreren">
-<form id="wafs" method="post" enctype="application/x-www-form-urlencoded" action="/enquete-css">
+<form method="post" enctype="application/x-www-form-urlencoded" action="/enquete-css">
     <fieldset>
         <!-- Web app from scratch -->
-        <h2>1. Web App from Scratch</h2>
         <h3>Vul hier jouw naam in</h3>
         <input id="wafs-naam" type="text" placeholder="Vul hier jouw naam in..." name="naam" required>
         <h3>Docenten van WAFS</h3>
@@ -66,13 +67,12 @@
     <textarea id="wafs-reactie" name="reactie" rows="4" cols="50" required placeholder="Schrijf hier wat jij want het vak vond of bijvoorbeeld een leuke toevoeging">
     </textarea>
     </fieldset>
-    <section id="submit">
-    <a id="beginBtn" href="/enquete-css">
-        <input id="submitBtn" type="submit" value="Volgende vak">
-    </a>
+    <section id="start">
+        <a href="/enquete-css">
+            <input id="starten" type="submit" value="Enquete starten!">
+        </a>
     </section>
 </form>
-</section>
 </main>
 
 

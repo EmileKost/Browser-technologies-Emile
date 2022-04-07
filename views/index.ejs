@@ -3,21 +3,16 @@
 <header>
     <h1>Enquete Minor Webdesign and Development</h1>
 </header>
-<main>
     <p>
         Welkom bij de enquete over de minor Webdesign and Development.
         Voor elk vak willen we weten wat je er van vond en wat beter kon.
         Vul eerst jouw persoonlijke gegevens in. Klik op 'enquete starten'
         om te beginnen.
     </p>
-    <p id="error-message">
-
-    </p>
-    <section id="centreren">
+    <main>
         <form id="persoonsgegevens" method="post" enctype="application/x-www-form-urlencoded" action="/enquete">
             <fieldset>
             <h2>Jouw persoonsgegevens</h2>
-            <p id="melding">Vul eerst alle velden in om te beginnen met de enquete</p>
             <section>
                 <h3>Vul hier jouw naam in</h3>
                 <input id="voornaam" type="text" placeholder="Jouw naam..." name="naam" required>
@@ -28,15 +23,13 @@
             </section>
             <!-- eventueel nog <btn> type submit voor formulier values -->
             </fieldset>
-            <section>
+            <section id="start">
             <a href="/enquete">
                 <input id="starten" type="submit" value="Enquete starten!">
             </a>
         </section>
+        <p id="melding">Vul alle velden in om te enquete te starten</p>
         </form>
-    </section>
-    <div>
-</div>
 </main>
 
 <%- include('./partials/foot') %>

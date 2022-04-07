@@ -1,0 +1,111 @@
+@font-face {
+    font-family: red-hat;
+    src: url('fonts/Red_Hat_Mono/static/RedHatMono-Medium.ttf');
+    /* backup fonts toevoegen */
+}
+
+@font-face {
+    font-family: red-hat-normal;
+    src: url('fonts/Red_Hat_Mono/static/RedHatMono-light.ttf');
+}
+
+body {
+    background-color: #212529;
+    font-family: red-hat, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: red-hat, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: red-hat, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: red-hat, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: #fefefe;
+}
+
+p {
+    font-family: red-hat-normal;
+}
+
+@supports(display: flex) {
+    main {
+    background-color: #edf2f4;
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+
+fieldset {
+    border: none;
+}
+
+form {
+    width: 95%;
+}
+
+form:invalid  {
+    border: 5px solid red;
+    padding: 8px;
+  }
+
+form:valid {
+    border: 5px solid green;
+    padding: 8px;
+}
+
+form:invalid #starten {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+form:valid #starten {
+    display: block;
+}
+
+textarea {
+    width: 300px;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#start {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#starten {
+    border: none;
+    background-color: #90be6d;
+    height: 35px;
+    border-radius: 15px;
+    color: #fefefe;
+}
+
+#starten:hover {
+    transform: scale(1.2);
+}

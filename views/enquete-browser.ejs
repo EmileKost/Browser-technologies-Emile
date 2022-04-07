@@ -4,16 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleEnquete.css" />
     <script src="./javascript/browsertechnologies.js" defer></script>
     <title>Enquete Minor Webdesign and Development</title>
 </head>
+<header>
+    <h1>Browser Technologies</h1>
+</header>
 <main>
-    <section id="centreren">
 <form id="browserT" method="post" enctype="application/x-www-form-urlencoded" action="/resultaten">
     <fieldset>
-        <!-- Web app from scratch -->
-        <h2>4. Browser Technologies</h2>
         <h3>Vul hier jouw naam in</h3>
         <input id="bt-naam" type="text" placeholder="Vul hier jouw naam in..." name="naam" required>
         <h3>Docenten van Browser Technologies</h3>
@@ -65,9 +65,9 @@
     <textarea id="bt-reactie" name="reactie" rows="4" cols="50" required placeholder="Schrijf hier wat jij want het vak vond of bijvoorbeeld een leuke toevoeging">
     </textarea>
     </fieldset>
-    <section id="submit">
-    <a id="submit" href="/resultaten">
-        <input id="submitBtn" type="submit" value="Enquete inleveren">
+    <section id="start">
+    <a href="/resultaten">
+        <input id="starten" type="submit" value="Enquete inleveren">
     </a>
     </section>
 </form>

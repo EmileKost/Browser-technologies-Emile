@@ -10,229 +10,93 @@
 }
 
 body {
-    font-family: red-hat-normal,
-                 Arial, Helvetica, sans-serif, 
-                 Verdana, Geneva, Tahoma, sans-serif,
-                 'Times New Roman',Times, serif;
-    background-color: #52b69a;
+    background-color: #212529;
+}
+
+h2 {
+    font-family: red-hat;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: red-hat;
+    font-size: 1em;
 }
 
 h1 {
-    text-align: center;
     font-family: red-hat;
-    font-weight: bold;
-    color: #fefefe;
-    margin-top: 5%;
-}
-
-textarea {
-    max-width: 70%;
-}
-
-h1, h2, h3 {
-    font-family: red-hat,
-                Arial, Helvetica, sans-serif;
-}
-
-@media screen and (max-width: 992px) {
-    h1 {
-        font-size: 25px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 15%;
-    }
-    h2 {
-        font-size: 20px;
-        text-align: center;
-    }
-    h3 {
-        font-size: 15px;
-    }
-}
-
-
-form {
-    margin-top: 5%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-main p:first-of-type {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-fieldset {
-    margin-top: 3%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-}
-
-form h2 {
     text-align: center;
-    padding-top: 4%;
-}
-
-form {
-    background-color: #f1faee;
-    width: 90%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 5%;
-}
-
-#centreren {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
-    width: 100%;
-}
-
-input {
-    width: 250px;
-    height: 35px;
-    border-radius: 10px;
-    border: 1px solid #1b4332;
-    padding-left: 2%;
-}
-
-button {
-    margin-top: 3%;
-    width: 180px;
-    height: 45px;
-    background-color: #168aad;
-    opacity: 70%;
-    border: none;
+    font-size: 2em;
     color: #fefefe;
 }
 
-
-
-#submit {
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+p {
+    font-family: red-hat-normal;
 }
 
-a {
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#submitBtn, #beginButton {
-    background-color: #023e8a;
-    border-radius: 15px;
-    height: 50px;
+p:first-of-type {
     color: #fefefe;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#submitBtn:hover {
-    border: 1px solid #fefefe;
-}
-
-
-/* Style voor lecture pagina's */
-
-header p {
-    text-align: center;
-    margin-left: 45%;
-    margin-right: 45%;
-    padding: 15px;
-    background-color: #F1Faee;
-}
-
-.weekData {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: -3%;
-}
-
-.weekData input {
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 2%;
-    padding: 5%;
-}
-
-.weekHeaders {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.weekHeaders h4:first-of-type {
-    margin-left: 5%;
-}
-
-.weekHeaders h4:nth-of-type(2) {
-    margin-right: 25%;
-}
-
-select {
-    width: 150px;
-}
-
-#story {
-    height: 100px;
-}
-
-#versturen {
-    margin-left: 15%;
-}
-
-
-/* Persoonsgegevens pagina Melding */
-
-#persoonsgegevens:valid {
-    border: 3px solid green;
-}
-
-#persoonsgegevens:invalid #melding  {
-    display: block;
+    padding: 2%;
 }
 
 #melding {
-    background-color: #343a40;
-    border-radius: 4px;
-    color: #fefefe;
-    text-align: center;
-    display: none;
-    font-family: red-hat;
-    font-size: 1em;
-} 
+    color: #212529;
+    font-size: 12px;
+}
+
+@supports (display:flex) {
+    main {
+        background-color: #edf2f4;
+        color: #212529;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+fieldset {
+    border: none;
+}
+
+#start {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #starten {
-    background-color: #023e8a;
+    border: none;
+    background-color: #90be6d;
+    height: 35px;
     border-radius: 15px;
-    height: 50px;
     color: #fefefe;
-    margin-left: auto;
-    margin-right: auto;
-    margin-left: 5%;
 }
 
-#submit {
+#persoonsgegevens:invalid #melding {
+    display: block;
+    color: red;
+}
+
+#persoonsgegevens:valid #melding {
     display: none;
 }
 
-#wafs:valid #submit, #pwa:valid #submit, #cssRescue:valid #submit, #browserT:valid #submit {
+
+
+
+
+
+
+/* #wafs:valid #submit, #pwa:valid #submit, #cssRescue:valid #submit, #browserT:valid #submit {
     display: block;
     margin-left: 4%;
 }
@@ -244,13 +108,7 @@ select {
 
 #wafs:valid, #pwa:valid, #cssRescue:valid, #browserT:valid {
     border: 3px solid green;
-}
-
-#resultatenmain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+} */
 
 
 
